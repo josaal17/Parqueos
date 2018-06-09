@@ -1,0 +1,1039 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A18D60F209B7CC4004EC94C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A18D60E209B7CC4004EC94C /* AppDelegate.swift */; };
+		0A18D611209B7CC4004EC94C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A18D610209B7CC4004EC94C /* ViewController.swift */; };
+		0A18D614209B7CC4004EC94C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A18D612209B7CC4004EC94C /* Main.storyboard */; };
+		0A18D617209B7CC4004EC94C /* Parqueos_CR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A18D615209B7CC4004EC94C /* Parqueos_CR.xcdatamodeld */; };
+		0A18D619209B7CC6004EC94C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A18D618209B7CC6004EC94C /* Assets.xcassets */; };
+		0A18D627209B7CC6004EC94C /* Parqueos_CRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A18D626209B7CC6004EC94C /* Parqueos_CRTests.swift */; };
+		0A18D632209B7CC6004EC94C /* Parqueos_CRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A18D631209B7CC6004EC94C /* Parqueos_CRUITests.swift */; };
+		0A18D6C820AA742C004EC94C /* LoginFacebookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A18D6C720AA742C004EC94C /* LoginFacebookModel.swift */; };
+		0A18D6CA20AB40D5004EC94C /* GradientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A18D6C920AB40D5004EC94C /* GradientColor.swift */; };
+		0A83BD9220C49BD300A22A74 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83BD9120C49BD300A22A74 /* CustomTableViewCell.swift */; };
+		0A83BD9520C49C2400A22A74 /* Parqueos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83BD9420C49C2400A22A74 /* Parqueos.swift */; };
+		0A83BD9720C49DC000A22A74 /* llenaTableParqueos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83BD9620C49DC000A22A74 /* llenaTableParqueos.swift */; };
+		0A83BD9A20C49EE700A22A74 /* listaParqueos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83BD9920C49EE700A22A74 /* listaParqueos.swift */; };
+		0A83BD9C20C49F1C00A22A74 /* parqueosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83BD9B20C49F1C00A22A74 /* parqueosModel.swift */; };
+		0A83BD9E20C4BFDF00A22A74 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83BD9D20C4BFDF00A22A74 /* MapViewController.swift */; };
+		0A83BDA220C5A4C900A22A74 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83BDA120C5A4C900A22A74 /* Usuario.swift */; };
+		0A83BDA420C5A72300A22A74 /* Vehiculo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83BDA320C5A72300A22A74 /* Vehiculo.swift */; };
+		0A83BDA620C5AE0200A22A74 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83BDA520C5AE0200A22A74 /* RegisterViewController.swift */; };
+		0A83BDAB20C5D6D900A22A74 /* vehiculosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83BDAA20C5D6D900A22A74 /* vehiculosModel.swift */; };
+		0A83BDAD20C5D77C00A22A74 /* listaVehiculos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83BDAC20C5D77C00A22A74 /* listaVehiculos.swift */; };
+		0A83BDAF20C5DD2300A22A74 /* usuarioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83BDAE20C5DD2300A22A74 /* usuarioModel.swift */; };
+		0A83BDB120C5DEA600A22A74 /* listaUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83BDB020C5DEA600A22A74 /* listaUsuario.swift */; };
+		0AD3ED2720C5FA5500E870E5 /* PlacasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED2620C5FA5500E870E5 /* PlacasTableViewCell.swift */; };
+		0AD3ED2920C6D30E00E870E5 /* ParqueoAnotacionMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED2820C6D30E00E870E5 /* ParqueoAnotacionMap.swift */; };
+		0AD3ED2B20C6FBFE00E870E5 /* ListaPlacasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED2A20C6FBFE00E870E5 /* ListaPlacasViewController.swift */; };
+		0AD3ED2D20C725B700E870E5 /* AdministradorImagenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED2C20C725B700E870E5 /* AdministradorImagenes.swift */; };
+		0AD3ED2F20C72AA200E870E5 /* guardaVehiculo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED2E20C72AA200E870E5 /* guardaVehiculo.swift */; };
+		0AD3ED3120C8535700E870E5 /* Reserva.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED3020C8535700E870E5 /* Reserva.swift */; };
+		0AD3ED3420C855C300E870E5 /* reservaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED3320C855C300E870E5 /* reservaModel.swift */; };
+		0AD3ED3620C8570100E870E5 /* listaReservas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED3520C8570100E870E5 /* listaReservas.swift */; };
+		0AD3ED3820C85F8300E870E5 /* ReservasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED3720C85F8300E870E5 /* ReservasTableViewCell.swift */; };
+		0AD3ED3A20C8601B00E870E5 /* ListaReservasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED3920C8601B00E870E5 /* ListaReservasViewController.swift */; };
+		0AD3ED3C20C87AF500E870E5 /* ImageViewProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED3B20C87AF500E870E5 /* ImageViewProperties.swift */; };
+		0AD3ED3E20C87DFD00E870E5 /* creaUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED3D20C87DFD00E870E5 /* creaUsuario.swift */; };
+		0AD3ED4020C8B7ED00E870E5 /* LoginUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED3F20C8B7ED00E870E5 /* LoginUsuario.swift */; };
+		0AD3ED4220C8BABE00E870E5 /* preguntaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED4120C8BABE00E870E5 /* preguntaSession.swift */; };
+		0AD3ED4420C90CE900E870E5 /* ConfiguracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED4320C90CE900E870E5 /* ConfiguracionViewController.swift */; };
+		0AD3ED4620C90E9B00E870E5 /* cerrarSesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED4520C90E9B00E870E5 /* cerrarSesion.swift */; };
+		0AD3ED4820C9734100E870E5 /* datosUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED4720C9734100E870E5 /* datosUsuario.swift */; };
+		0AD3ED4A20CA4C0A00E870E5 /* borraVehiculo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED4920CA4C0A00E870E5 /* borraVehiculo.swift */; };
+		0AD3ED4D20CAE44400E870E5 /* datosParqueo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED4C20CAE44400E870E5 /* datosParqueo.swift */; };
+		0AD3ED4F20CAF06900E870E5 /* creaReserva.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED4E20CAF06900E870E5 /* creaReserva.swift */; };
+		0AD3ED5120CB014B00E870E5 /* borraReserva.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED5020CB014B00E870E5 /* borraReserva.swift */; };
+		0AD3ED5520CB6F1000E870E5 /* TableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3ED5420CB6F1000E870E5 /* TableViewHelper.swift */; };
+		0AD615D220BE5C7F00286765 /* NavBarGradientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD615D120BE5C7F00286765 /* NavBarGradientColor.swift */; };
+		0AD615D420BE5D1B00286765 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD615D320BE5D1B00286765 /* LoginViewController.swift */; };
+		0AD615D620BE660F00286765 /* textFieldProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD615D520BE660F00286765 /* textFieldProperties.swift */; };
+		C56EF4187FD667A854802D6B /* Pods_Parqueos_CRUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C992E5495DBB644A53CBC4E2 /* Pods_Parqueos_CRUITests.framework */; };
+		C6A8CD76914161167C7F883F /* Pods_Parqueos_CRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8F46642B657C7ADEEB19B6 /* Pods_Parqueos_CRTests.framework */; };
+		F27890FEEFBDEB0C2CA59D99 /* Pods_Parqueos_CR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD158D6FC537979C0B54FD9A /* Pods_Parqueos_CR.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A18D623209B7CC6004EC94C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A18D603209B7CC4004EC94C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A18D60A209B7CC4004EC94C;
+			remoteInfo = "Parqueos CR";
+		};
+		0A18D62E209B7CC6004EC94C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A18D603209B7CC4004EC94C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A18D60A209B7CC4004EC94C;
+			remoteInfo = "Parqueos CR";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A18D60B209B7CC4004EC94C /* Parqueos CR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Parqueos CR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A18D60E209B7CC4004EC94C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A18D610209B7CC4004EC94C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0A18D613209B7CC4004EC94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A18D616209B7CC4004EC94C /* Parqueos_CR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Parqueos_CR.xcdatamodel; sourceTree = "<group>"; };
+		0A18D618209B7CC6004EC94C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A18D61D209B7CC6004EC94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A18D622209B7CC6004EC94C /* Parqueos CRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parqueos CRTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A18D626209B7CC6004EC94C /* Parqueos_CRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parqueos_CRTests.swift; sourceTree = "<group>"; };
+		0A18D628209B7CC6004EC94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A18D62D209B7CC6004EC94C /* Parqueos CRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parqueos CRUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A18D631209B7CC6004EC94C /* Parqueos_CRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parqueos_CRUITests.swift; sourceTree = "<group>"; };
+		0A18D633209B7CC6004EC94C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A18D6C720AA742C004EC94C /* LoginFacebookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFacebookModel.swift; sourceTree = "<group>"; };
+		0A18D6C920AB40D5004EC94C /* GradientColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientColor.swift; sourceTree = "<group>"; };
+		0A83BD9120C49BD300A22A74 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		0A83BD9420C49C2400A22A74 /* Parqueos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parqueos.swift; sourceTree = "<group>"; };
+		0A83BD9620C49DC000A22A74 /* llenaTableParqueos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = llenaTableParqueos.swift; sourceTree = "<group>"; };
+		0A83BD9920C49EE700A22A74 /* listaParqueos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listaParqueos.swift; sourceTree = "<group>"; };
+		0A83BD9B20C49F1C00A22A74 /* parqueosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parqueosModel.swift; sourceTree = "<group>"; };
+		0A83BD9D20C4BFDF00A22A74 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0A83BDA120C5A4C900A22A74 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		0A83BDA320C5A72300A22A74 /* Vehiculo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehiculo.swift; sourceTree = "<group>"; };
+		0A83BDA520C5AE0200A22A74 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		0A83BDAA20C5D6D900A22A74 /* vehiculosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vehiculosModel.swift; sourceTree = "<group>"; };
+		0A83BDAC20C5D77C00A22A74 /* listaVehiculos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listaVehiculos.swift; sourceTree = "<group>"; };
+		0A83BDAE20C5DD2300A22A74 /* usuarioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usuarioModel.swift; sourceTree = "<group>"; };
+		0A83BDB020C5DEA600A22A74 /* listaUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listaUsuario.swift; sourceTree = "<group>"; };
+		0AD3ED2620C5FA5500E870E5 /* PlacasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacasTableViewCell.swift; sourceTree = "<group>"; };
+		0AD3ED2820C6D30E00E870E5 /* ParqueoAnotacionMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParqueoAnotacionMap.swift; sourceTree = "<group>"; };
+		0AD3ED2A20C6FBFE00E870E5 /* ListaPlacasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPlacasViewController.swift; sourceTree = "<group>"; };
+		0AD3ED2C20C725B700E870E5 /* AdministradorImagenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdministradorImagenes.swift; sourceTree = "<group>"; };
+		0AD3ED2E20C72AA200E870E5 /* guardaVehiculo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guardaVehiculo.swift; sourceTree = "<group>"; };
+		0AD3ED3020C8535700E870E5 /* Reserva.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reserva.swift; sourceTree = "<group>"; };
+		0AD3ED3320C855C300E870E5 /* reservaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reservaModel.swift; sourceTree = "<group>"; };
+		0AD3ED3520C8570100E870E5 /* listaReservas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listaReservas.swift; sourceTree = "<group>"; };
+		0AD3ED3720C85F8300E870E5 /* ReservasTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservasTableViewCell.swift; sourceTree = "<group>"; };
+		0AD3ED3920C8601B00E870E5 /* ListaReservasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaReservasViewController.swift; sourceTree = "<group>"; };
+		0AD3ED3B20C87AF500E870E5 /* ImageViewProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewProperties.swift; sourceTree = "<group>"; };
+		0AD3ED3D20C87DFD00E870E5 /* creaUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = creaUsuario.swift; sourceTree = "<group>"; };
+		0AD3ED3F20C8B7ED00E870E5 /* LoginUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUsuario.swift; sourceTree = "<group>"; };
+		0AD3ED4120C8BABE00E870E5 /* preguntaSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = preguntaSession.swift; sourceTree = "<group>"; };
+		0AD3ED4320C90CE900E870E5 /* ConfiguracionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracionViewController.swift; sourceTree = "<group>"; };
+		0AD3ED4520C90E9B00E870E5 /* cerrarSesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cerrarSesion.swift; sourceTree = "<group>"; };
+		0AD3ED4720C9734100E870E5 /* datosUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datosUsuario.swift; sourceTree = "<group>"; };
+		0AD3ED4920CA4C0A00E870E5 /* borraVehiculo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = borraVehiculo.swift; sourceTree = "<group>"; };
+		0AD3ED4C20CAE44400E870E5 /* datosParqueo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = datosParqueo.swift; sourceTree = "<group>"; };
+		0AD3ED4E20CAF06900E870E5 /* creaReserva.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = creaReserva.swift; sourceTree = "<group>"; };
+		0AD3ED5020CB014B00E870E5 /* borraReserva.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = borraReserva.swift; sourceTree = "<group>"; };
+		0AD3ED5420CB6F1000E870E5 /* TableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHelper.swift; sourceTree = "<group>"; };
+		0AD615D120BE5C7F00286765 /* NavBarGradientColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarGradientColor.swift; sourceTree = "<group>"; };
+		0AD615D320BE5D1B00286765 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0AD615D520BE660F00286765 /* textFieldProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textFieldProperties.swift; sourceTree = "<group>"; };
+		2BF9CAEFA994589FF67671F1 /* Pods-Parqueos CRUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parqueos CRUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parqueos CRUITests/Pods-Parqueos CRUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5C8F46642B657C7ADEEB19B6 /* Pods_Parqueos_CRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parqueos_CRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		654A07772D594EACEEF97468 /* Pods-Parqueos CR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parqueos CR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parqueos CR/Pods-Parqueos CR.debug.xcconfig"; sourceTree = "<group>"; };
+		798322FE078DC1AC32251E2D /* Pods-Parqueos CR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parqueos CR.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parqueos CR/Pods-Parqueos CR.release.xcconfig"; sourceTree = "<group>"; };
+		871B17AC666D687D381322BB /* Pods-Parqueos CRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parqueos CRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parqueos CRTests/Pods-Parqueos CRTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A76B97584BDD42EDCD720D22 /* Pods-Parqueos CRUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parqueos CRUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Parqueos CRUITests/Pods-Parqueos CRUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A92DF93AB1CCD504F67C8A13 /* Pods-Parqueos CRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parqueos CRTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Parqueos CRTests/Pods-Parqueos CRTests.release.xcconfig"; sourceTree = "<group>"; };
+		C992E5495DBB644A53CBC4E2 /* Pods_Parqueos_CRUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parqueos_CRUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD158D6FC537979C0B54FD9A /* Pods_Parqueos_CR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parqueos_CR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A18D608209B7CC4004EC94C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27890FEEFBDEB0C2CA59D99 /* Pods_Parqueos_CR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A18D61F209B7CC6004EC94C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A8CD76914161167C7F883F /* Pods_Parqueos_CRTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A18D62A209B7CC6004EC94C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56EF4187FD667A854802D6B /* Pods_Parqueos_CRUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A18D602209B7CC4004EC94C = {
+			isa = PBXGroup;
+			children = (
+				0A18D60D209B7CC4004EC94C /* Parqueos CR */,
+				0A18D625209B7CC6004EC94C /* Parqueos CRTests */,
+				0A18D630209B7CC6004EC94C /* Parqueos CRUITests */,
+				0A18D60C209B7CC4004EC94C /* Products */,
+				D611EB5E10AF6D2211B59327 /* Pods */,
+				FCE5F24D4704FF75EB4077D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0A18D60C209B7CC4004EC94C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A18D60B209B7CC4004EC94C /* Parqueos CR.app */,
+				0A18D622209B7CC6004EC94C /* Parqueos CRTests.xctest */,
+				0A18D62D209B7CC6004EC94C /* Parqueos CRUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A18D60D209B7CC4004EC94C /* Parqueos CR */ = {
+			isa = PBXGroup;
+			children = (
+				0A18D6C620AA73FA004EC94C /* Controller */,
+				0A18D6C520AA73F3004EC94C /* View */,
+				0A18D6C420AA73E8004EC94C /* Model */,
+				0A18D618209B7CC6004EC94C /* Assets.xcassets */,
+				0A18D61D209B7CC6004EC94C /* Info.plist */,
+				0A18D615209B7CC4004EC94C /* Parqueos_CR.xcdatamodeld */,
+			);
+			path = "Parqueos CR";
+			sourceTree = "<group>";
+		};
+		0A18D625209B7CC6004EC94C /* Parqueos CRTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A18D626209B7CC6004EC94C /* Parqueos_CRTests.swift */,
+				0A18D628209B7CC6004EC94C /* Info.plist */,
+			);
+			path = "Parqueos CRTests";
+			sourceTree = "<group>";
+		};
+		0A18D630209B7CC6004EC94C /* Parqueos CRUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A18D631209B7CC6004EC94C /* Parqueos_CRUITests.swift */,
+				0A18D633209B7CC6004EC94C /* Info.plist */,
+			);
+			path = "Parqueos CRUITests";
+			sourceTree = "<group>";
+		};
+		0A18D6C420AA73E8004EC94C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0AD3ED2C20C725B700E870E5 /* AdministradorImagenes.swift */,
+				0A83BD9320C49BEF00A22A74 /* DB */,
+				0A18D6C720AA742C004EC94C /* LoginFacebookModel.swift */,
+				0A18D6C920AB40D5004EC94C /* GradientColor.swift */,
+				0AD615D120BE5C7F00286765 /* NavBarGradientColor.swift */,
+				0AD615D520BE660F00286765 /* textFieldProperties.swift */,
+				0A83BD9120C49BD300A22A74 /* CustomTableViewCell.swift */,
+				0AD3ED2820C6D30E00E870E5 /* ParqueoAnotacionMap.swift */,
+				0AD3ED3B20C87AF500E870E5 /* ImageViewProperties.swift */,
+				0AD3ED5420CB6F1000E870E5 /* TableViewHelper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A18D6C520AA73F3004EC94C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A18D612209B7CC4004EC94C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A18D6C620AA73FA004EC94C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A18D610209B7CC4004EC94C /* ViewController.swift */,
+				0A18D60E209B7CC4004EC94C /* AppDelegate.swift */,
+				0AD615D320BE5D1B00286765 /* LoginViewController.swift */,
+				0A83BD9D20C4BFDF00A22A74 /* MapViewController.swift */,
+				0A83BDA520C5AE0200A22A74 /* RegisterViewController.swift */,
+				0AD3ED2620C5FA5500E870E5 /* PlacasTableViewCell.swift */,
+				0AD3ED2A20C6FBFE00E870E5 /* ListaPlacasViewController.swift */,
+				0AD3ED3720C85F8300E870E5 /* ReservasTableViewCell.swift */,
+				0AD3ED3920C8601B00E870E5 /* ListaReservasViewController.swift */,
+				0AD3ED4320C90CE900E870E5 /* ConfiguracionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0A83BD9320C49BEF00A22A74 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				0AD3ED3020C8535700E870E5 /* Reserva.swift */,
+				0A83BD9820C49EC600A22A74 /* Datos */,
+				0A83BD9420C49C2400A22A74 /* Parqueos.swift */,
+				0A83BD9620C49DC000A22A74 /* llenaTableParqueos.swift */,
+				0A83BDA120C5A4C900A22A74 /* Usuario.swift */,
+				0A83BDA320C5A72300A22A74 /* Vehiculo.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		0A83BD9820C49EC600A22A74 /* Datos */ = {
+			isa = PBXGroup;
+			children = (
+				0AD3ED3220C855A800E870E5 /* Reservas */,
+				0A83BDA920C5D65F00A22A74 /* Usuario */,
+				0A83BDA820C5D65400A22A74 /* Vehiculos */,
+				0A83BDA720C5D64300A22A74 /* Parqueos */,
+			);
+			path = Datos;
+			sourceTree = "<group>";
+		};
+		0A83BDA720C5D64300A22A74 /* Parqueos */ = {
+			isa = PBXGroup;
+			children = (
+				0A83BD9920C49EE700A22A74 /* listaParqueos.swift */,
+				0A83BD9B20C49F1C00A22A74 /* parqueosModel.swift */,
+				0AD3ED4C20CAE44400E870E5 /* datosParqueo.swift */,
+			);
+			path = Parqueos;
+			sourceTree = "<group>";
+		};
+		0A83BDA820C5D65400A22A74 /* Vehiculos */ = {
+			isa = PBXGroup;
+			children = (
+				0A83BDAA20C5D6D900A22A74 /* vehiculosModel.swift */,
+				0A83BDAC20C5D77C00A22A74 /* listaVehiculos.swift */,
+				0AD3ED2E20C72AA200E870E5 /* guardaVehiculo.swift */,
+				0AD3ED4920CA4C0A00E870E5 /* borraVehiculo.swift */,
+			);
+			path = Vehiculos;
+			sourceTree = "<group>";
+		};
+		0A83BDA920C5D65F00A22A74 /* Usuario */ = {
+			isa = PBXGroup;
+			children = (
+				0A83BDAE20C5DD2300A22A74 /* usuarioModel.swift */,
+				0A83BDB020C5DEA600A22A74 /* listaUsuario.swift */,
+				0AD3ED3D20C87DFD00E870E5 /* creaUsuario.swift */,
+				0AD3ED3F20C8B7ED00E870E5 /* LoginUsuario.swift */,
+				0AD3ED4120C8BABE00E870E5 /* preguntaSession.swift */,
+				0AD3ED4520C90E9B00E870E5 /* cerrarSesion.swift */,
+				0AD3ED4720C9734100E870E5 /* datosUsuario.swift */,
+			);
+			path = Usuario;
+			sourceTree = "<group>";
+		};
+		0AD3ED3220C855A800E870E5 /* Reservas */ = {
+			isa = PBXGroup;
+			children = (
+				0AD3ED3320C855C300E870E5 /* reservaModel.swift */,
+				0AD3ED3520C8570100E870E5 /* listaReservas.swift */,
+				0AD3ED4E20CAF06900E870E5 /* creaReserva.swift */,
+				0AD3ED5020CB014B00E870E5 /* borraReserva.swift */,
+			);
+			path = Reservas;
+			sourceTree = "<group>";
+		};
+		D611EB5E10AF6D2211B59327 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				654A07772D594EACEEF97468 /* Pods-Parqueos CR.debug.xcconfig */,
+				798322FE078DC1AC32251E2D /* Pods-Parqueos CR.release.xcconfig */,
+				871B17AC666D687D381322BB /* Pods-Parqueos CRTests.debug.xcconfig */,
+				A92DF93AB1CCD504F67C8A13 /* Pods-Parqueos CRTests.release.xcconfig */,
+				A76B97584BDD42EDCD720D22 /* Pods-Parqueos CRUITests.debug.xcconfig */,
+				2BF9CAEFA994589FF67671F1 /* Pods-Parqueos CRUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FCE5F24D4704FF75EB4077D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD158D6FC537979C0B54FD9A /* Pods_Parqueos_CR.framework */,
+				5C8F46642B657C7ADEEB19B6 /* Pods_Parqueos_CRTests.framework */,
+				C992E5495DBB644A53CBC4E2 /* Pods_Parqueos_CRUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A18D60A209B7CC4004EC94C /* Parqueos CR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A18D636209B7CC6004EC94C /* Build configuration list for PBXNativeTarget "Parqueos CR" */;
+			buildPhases = (
+				A451360688B0F439557D4DBA /* [CP] Check Pods Manifest.lock */,
+				0A18D607209B7CC4004EC94C /* Sources */,
+				0A18D608209B7CC4004EC94C /* Frameworks */,
+				0A18D609209B7CC4004EC94C /* Resources */,
+				67A8D63769BCE842539B15F8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Parqueos CR";
+			productName = "Parqueos CR";
+			productReference = 0A18D60B209B7CC4004EC94C /* Parqueos CR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A18D621209B7CC6004EC94C /* Parqueos CRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A18D639209B7CC6004EC94C /* Build configuration list for PBXNativeTarget "Parqueos CRTests" */;
+			buildPhases = (
+				75445994FD457F40B605BE0A /* [CP] Check Pods Manifest.lock */,
+				0A18D61E209B7CC6004EC94C /* Sources */,
+				0A18D61F209B7CC6004EC94C /* Frameworks */,
+				0A18D620209B7CC6004EC94C /* Resources */,
+				4100848AD4911C89CE6E62EA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A18D624209B7CC6004EC94C /* PBXTargetDependency */,
+			);
+			name = "Parqueos CRTests";
+			productName = "Parqueos CRTests";
+			productReference = 0A18D622209B7CC6004EC94C /* Parqueos CRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0A18D62C209B7CC6004EC94C /* Parqueos CRUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A18D63C209B7CC6004EC94C /* Build configuration list for PBXNativeTarget "Parqueos CRUITests" */;
+			buildPhases = (
+				20F408A7FF610C5BE5B7621F /* [CP] Check Pods Manifest.lock */,
+				0A18D629209B7CC6004EC94C /* Sources */,
+				0A18D62A209B7CC6004EC94C /* Frameworks */,
+				0A18D62B209B7CC6004EC94C /* Resources */,
+				023132A8907E5013C8268AA1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A18D62F209B7CC6004EC94C /* PBXTargetDependency */,
+			);
+			name = "Parqueos CRUITests";
+			productName = "Parqueos CRUITests";
+			productReference = 0A18D62D209B7CC6004EC94C /* Parqueos CRUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A18D603209B7CC4004EC94C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Technical-PC";
+				TargetAttributes = {
+					0A18D60A209B7CC4004EC94C = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					0A18D621209B7CC6004EC94C = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 0A18D60A209B7CC4004EC94C;
+					};
+					0A18D62C209B7CC6004EC94C = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 0A18D60A209B7CC4004EC94C;
+					};
+				};
+			};
+			buildConfigurationList = 0A18D606209B7CC4004EC94C /* Build configuration list for PBXProject "Parqueos CR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A18D602209B7CC4004EC94C;
+			productRefGroup = 0A18D60C209B7CC4004EC94C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A18D60A209B7CC4004EC94C /* Parqueos CR */,
+				0A18D621209B7CC6004EC94C /* Parqueos CRTests */,
+				0A18D62C209B7CC6004EC94C /* Parqueos CRUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A18D609209B7CC4004EC94C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A18D619209B7CC6004EC94C /* Assets.xcassets in Resources */,
+				0A18D614209B7CC4004EC94C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A18D620209B7CC6004EC94C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A18D62B209B7CC6004EC94C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		023132A8907E5013C8268AA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Parqueos CRUITests/Pods-Parqueos CRUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/IHKeyboardAvoiding/IHKeyboardAvoiding.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IHKeyboardAvoiding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parqueos CRUITests/Pods-Parqueos CRUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20F408A7FF610C5BE5B7621F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Parqueos CRUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4100848AD4911C89CE6E62EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Parqueos CRTests/Pods-Parqueos CRTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/IHKeyboardAvoiding/IHKeyboardAvoiding.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IHKeyboardAvoiding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parqueos CRTests/Pods-Parqueos CRTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67A8D63769BCE842539B15F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Parqueos CR/Pods-Parqueos CR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/IHKeyboardAvoiding/IHKeyboardAvoiding.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IHKeyboardAvoiding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Parqueos CR/Pods-Parqueos CR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75445994FD457F40B605BE0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Parqueos CRTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A451360688B0F439557D4DBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Parqueos CR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A18D607209B7CC4004EC94C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A83BD9720C49DC000A22A74 /* llenaTableParqueos.swift in Sources */,
+				0A83BDAD20C5D77C00A22A74 /* listaVehiculos.swift in Sources */,
+				0AD3ED2B20C6FBFE00E870E5 /* ListaPlacasViewController.swift in Sources */,
+				0A83BD9C20C49F1C00A22A74 /* parqueosModel.swift in Sources */,
+				0AD3ED3A20C8601B00E870E5 /* ListaReservasViewController.swift in Sources */,
+				0AD3ED4A20CA4C0A00E870E5 /* borraVehiculo.swift in Sources */,
+				0A83BD9220C49BD300A22A74 /* CustomTableViewCell.swift in Sources */,
+				0AD3ED4420C90CE900E870E5 /* ConfiguracionViewController.swift in Sources */,
+				0A83BDA220C5A4C900A22A74 /* Usuario.swift in Sources */,
+				0AD3ED5120CB014B00E870E5 /* borraReserva.swift in Sources */,
+				0AD3ED3420C855C300E870E5 /* reservaModel.swift in Sources */,
+				0AD3ED2D20C725B700E870E5 /* AdministradorImagenes.swift in Sources */,
+				0AD615D420BE5D1B00286765 /* LoginViewController.swift in Sources */,
+				0A83BDAF20C5DD2300A22A74 /* usuarioModel.swift in Sources */,
+				0AD3ED3820C85F8300E870E5 /* ReservasTableViewCell.swift in Sources */,
+				0AD3ED4220C8BABE00E870E5 /* preguntaSession.swift in Sources */,
+				0AD3ED3120C8535700E870E5 /* Reserva.swift in Sources */,
+				0A18D617209B7CC4004EC94C /* Parqueos_CR.xcdatamodeld in Sources */,
+				0AD615D620BE660F00286765 /* textFieldProperties.swift in Sources */,
+				0AD3ED3620C8570100E870E5 /* listaReservas.swift in Sources */,
+				0AD3ED5520CB6F1000E870E5 /* TableViewHelper.swift in Sources */,
+				0A18D611209B7CC4004EC94C /* ViewController.swift in Sources */,
+				0A83BDAB20C5D6D900A22A74 /* vehiculosModel.swift in Sources */,
+				0AD3ED4D20CAE44400E870E5 /* datosParqueo.swift in Sources */,
+				0A18D60F209B7CC4004EC94C /* AppDelegate.swift in Sources */,
+				0A18D6C820AA742C004EC94C /* LoginFacebookModel.swift in Sources */,
+				0A18D6CA20AB40D5004EC94C /* GradientColor.swift in Sources */,
+				0AD3ED2F20C72AA200E870E5 /* guardaVehiculo.swift in Sources */,
+				0AD3ED4020C8B7ED00E870E5 /* LoginUsuario.swift in Sources */,
+				0A83BDA420C5A72300A22A74 /* Vehiculo.swift in Sources */,
+				0AD3ED4820C9734100E870E5 /* datosUsuario.swift in Sources */,
+				0AD3ED3E20C87DFD00E870E5 /* creaUsuario.swift in Sources */,
+				0AD615D220BE5C7F00286765 /* NavBarGradientColor.swift in Sources */,
+				0A83BDA620C5AE0200A22A74 /* RegisterViewController.swift in Sources */,
+				0AD3ED4620C90E9B00E870E5 /* cerrarSesion.swift in Sources */,
+				0A83BD9520C49C2400A22A74 /* Parqueos.swift in Sources */,
+				0AD3ED4F20CAF06900E870E5 /* creaReserva.swift in Sources */,
+				0A83BDB120C5DEA600A22A74 /* listaUsuario.swift in Sources */,
+				0A83BD9A20C49EE700A22A74 /* listaParqueos.swift in Sources */,
+				0A83BD9E20C4BFDF00A22A74 /* MapViewController.swift in Sources */,
+				0AD3ED2920C6D30E00E870E5 /* ParqueoAnotacionMap.swift in Sources */,
+				0AD3ED2720C5FA5500E870E5 /* PlacasTableViewCell.swift in Sources */,
+				0AD3ED3C20C87AF500E870E5 /* ImageViewProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A18D61E209B7CC6004EC94C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A18D627209B7CC6004EC94C /* Parqueos_CRTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A18D629209B7CC6004EC94C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A18D632209B7CC6004EC94C /* Parqueos_CRUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A18D624209B7CC6004EC94C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A18D60A209B7CC4004EC94C /* Parqueos CR */;
+			targetProxy = 0A18D623209B7CC6004EC94C /* PBXContainerItemProxy */;
+		};
+		0A18D62F209B7CC6004EC94C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A18D60A209B7CC4004EC94C /* Parqueos CR */;
+			targetProxy = 0A18D62E209B7CC6004EC94C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A18D612209B7CC4004EC94C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A18D613209B7CC4004EC94C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A18D634209B7CC6004EC94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A18D635209B7CC6004EC94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A18D637209B7CC6004EC94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 654A07772D594EACEEF97468 /* Pods-Parqueos CR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EMFUVWTBJE;
+				INFOPLIST_FILE = "Parqueos CR/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parqueoscr.Parqueos-CR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A18D638209B7CC6004EC94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 798322FE078DC1AC32251E2D /* Pods-Parqueos CR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EMFUVWTBJE;
+				INFOPLIST_FILE = "Parqueos CR/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parqueoscr.Parqueos-CR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0A18D63A209B7CC6004EC94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 871B17AC666D687D381322BB /* Pods-Parqueos CRTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EMFUVWTBJE;
+				INFOPLIST_FILE = "Parqueos CRTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parqueoscr.Parqueos-CRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parqueos CR.app/Parqueos CR";
+			};
+			name = Debug;
+		};
+		0A18D63B209B7CC6004EC94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A92DF93AB1CCD504F67C8A13 /* Pods-Parqueos CRTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EMFUVWTBJE;
+				INFOPLIST_FILE = "Parqueos CRTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parqueoscr.Parqueos-CRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parqueos CR.app/Parqueos CR";
+			};
+			name = Release;
+		};
+		0A18D63D209B7CC6004EC94C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A76B97584BDD42EDCD720D22 /* Pods-Parqueos CRUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EMFUVWTBJE;
+				INFOPLIST_FILE = "Parqueos CRUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parqueoscr.Parqueos-CRUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Parqueos CR";
+			};
+			name = Debug;
+		};
+		0A18D63E209B7CC6004EC94C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BF9CAEFA994589FF67671F1 /* Pods-Parqueos CRUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EMFUVWTBJE;
+				INFOPLIST_FILE = "Parqueos CRUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parqueoscr.Parqueos-CRUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Parqueos CR";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A18D606209B7CC4004EC94C /* Build configuration list for PBXProject "Parqueos CR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A18D634209B7CC6004EC94C /* Debug */,
+				0A18D635209B7CC6004EC94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A18D636209B7CC6004EC94C /* Build configuration list for PBXNativeTarget "Parqueos CR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A18D637209B7CC6004EC94C /* Debug */,
+				0A18D638209B7CC6004EC94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A18D639209B7CC6004EC94C /* Build configuration list for PBXNativeTarget "Parqueos CRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A18D63A209B7CC6004EC94C /* Debug */,
+				0A18D63B209B7CC6004EC94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A18D63C209B7CC6004EC94C /* Build configuration list for PBXNativeTarget "Parqueos CRUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A18D63D209B7CC6004EC94C /* Debug */,
+				0A18D63E209B7CC6004EC94C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0A18D615209B7CC4004EC94C /* Parqueos_CR.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0A18D616209B7CC4004EC94C /* Parqueos_CR.xcdatamodel */,
+			);
+			currentVersion = 0A18D616209B7CC4004EC94C /* Parqueos_CR.xcdatamodel */;
+			path = Parqueos_CR.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0A18D603209B7CC4004EC94C /* Project object */;
+}
